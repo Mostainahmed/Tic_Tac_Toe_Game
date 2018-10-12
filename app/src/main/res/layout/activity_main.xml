@@ -24,7 +24,8 @@
             android:layout_column="0"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="40dp"
-            android:onClick="dropIn"/>
+            android:onClick="dropIn"
+            android:tag="0"/>
 
         <ImageView
             android:id="@+id/imageView2"
@@ -34,7 +35,8 @@
             android:layout_column="1"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="40dp"
-            android:onClick="dropIn"/>
+            android:onClick="dropIn"
+            android:tag="1"/>
 
         <ImageView
             android:id="@+id/imageView3"
@@ -44,7 +46,8 @@
             android:layout_column="2"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="40dp"
-            android:onClick="dropIn"/>
+            android:onClick="dropIn"
+            android:tag="2"/>
 
         <ImageView
             android:id="@+id/imageView4"
@@ -54,7 +57,8 @@
             android:layout_column="0"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="70dp"
-            android:onClick="dropIn"/>
+            android:onClick="dropIn"
+            android:tag="3"/>
 
         <ImageView
             android:id="@+id/imageView5"
@@ -64,7 +68,8 @@
             android:layout_column="1"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="70dp"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="4"/>
 
         <ImageView
             android:id="@+id/imageView6"
@@ -74,7 +79,8 @@
             android:layout_column="2"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="70dp"
-            android:onClick="dropIn"/>
+            android:onClick="dropIn"
+            android:tag="5"/>
 
         <ImageView
             android:id="@+id/imageView7"
@@ -84,7 +90,8 @@
             android:layout_column="0"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="70dp"
-            android:onClick="dropIn"/>
+            android:onClick="dropIn"
+            android:tag="6"/>
 
         <ImageView
             android:id="@+id/imageView8"
@@ -94,7 +101,8 @@
             android:layout_column="1"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="70dp"
-            android:onClick="dropIn"/>
+            android:onClick="dropIn"
+            android:tag="7"/>
 
         <ImageView
             android:id="@+id/imageView9"
@@ -104,7 +112,41 @@
             android:layout_column="2"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="70dp"
-            android:onClick="dropIn"/>
+            android:onClick="dropIn"
+            android:tag="8"/>
     </GridLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#e0f75a5a"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:visibility="invisible"
+        android:id="@+id/playAgainLayout">
+
+        <Button
+            android:id="@+id/buttonplayagain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="playAgain"
+            android:layout_margin="10dp"
+            android:text="Play Again"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:textAlignment="center"
+            android:paddingTop="6dp"
+            android:id="@+id/textResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            tools:text="Result" />
+    </LinearLayout>
 
 </RelativeLayout>
